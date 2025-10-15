@@ -1,0 +1,126 @@
+/* 
+
+.main::first-letter {
+  color: red;
+}
+h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration: double solid teal;
+}
+div {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  border: 2px solid black;
+}
+
+h3 {
+  background-color: limegreen;
+}
+
+a {
+  text-decoration: none;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.414);
+}
+
+img {
+  height: 300px;
+  width: 350px;
+  padding: 0 60% 0 40%;
+  border-radius: 10px;
+}
+
+img:hover {
+  transition: 1s;
+  /* height: 320px; */
+  width: 370px;
+  box-shadow: 5px 10px 5px black;
+} */
+
+
+
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+.menuBar {
+  background-color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 👈 y-offset=4px, blur=10px */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.menuBar h1 {
+  font-size: 22px;
+  color: #0077b6;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* 👈 text shadow */
+}
+
+.menuBar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menuBar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s, box-shadow 0.3s;
+}
+
+.menuBar ul li a:hover {
+  color: #0077b6;
+  box-shadow: 0px 2px 8px rgba(0, 119, 182, 0.4); /* 👈 soft hover shadow */
+}
+
+/* Section Styling */
+.part {
+  background-color: #fff;
+  margin: 40px auto;
+  padding: 30px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1); /* 👈 x-offset=5, y-offset=10, blur=20 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.part:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+}
+
+.part h2 {
+  color: #0077b6;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0077b6;
+  color: white;
+  box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.2); /* shadow above footer */
+}
